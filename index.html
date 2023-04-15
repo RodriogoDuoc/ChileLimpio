@@ -11,7 +11,7 @@
     <form action="" id = 'formulario'>
         <div>
             <label for="rut">Rut</label>
-            <input type="number" minlength='9' maxlength='10' id='rut'>
+            <input type="number" min='100000000' max='9999999999' id='rut'>
         </div> 
         <div>
             <label for="apellidopa">Apellido paterno</label>
@@ -23,7 +23,7 @@
         </div>
         <div>
             <label for="nombre">Nombre</label>
-            <input type="text" id='nombre'>
+            <input type="text" min="3" max="20" id='nombre'>
         </div>
         <div>
             <label for="fechaNac">Fecha nacimiento</label>
