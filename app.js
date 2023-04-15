@@ -25,11 +25,11 @@ var form = document.getElementById('formulario');
             mensajesError.push('Ingrese su rut')
     }
 
-    if(apellidoPa.value === null || apellidoPa.value === ''){
+    if(apellidopa.value === null || apellidopa.value === ''){
         mensajesError.push('Apellido paterno')    
     }   
 
-    if(apellidoMa.value === null || apellidoMa.value === ''){
+    if(apellidoma.value === null || apellidoma.value === ''){
         mensajesError.push('Apellido materno')    
     }
 
@@ -38,8 +38,32 @@ var form = document.getElementById('formulario');
         mensajesError.push('Ingresa tu nombre')
     }
 
-    if(password.value === null || password.value === ''){
-        mensajesError.push('Ingresa tu password')
+    if(fechaNac.value === null || fechaNac.value === ''){
+        mensajesError.push('Ingresa tu fecha de nacimiento')
+    }
+
+    if(edad.value === null || edad.value === ''){
+        mensajesError.push('Ingresa tu edad')
+    }
+
+    if(genero.value === null || genero.value === ''){
+        mensajesError.push('genero')
+    }
+
+    if(email.value === null || email.value === ''){
+        mensajesError.push('Ingresa tu email')
+    }
+
+    if(celular.value === null || celular.value === ''){
+        mensajesError.push('Ingresa tu nombre')
+    }
+
+    if(motivacion.value === null || motivacion.value === ''){
+        mensajesError.push('Ingresa tu nombre')
+    }
+
+    if(profesion.value === null || profesion.value === ''){
+        mensajesError.push('Ingresa tu profesion')
     }
 
         error.innerHTML = mensajesError.join(', ');    
