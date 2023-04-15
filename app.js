@@ -48,7 +48,7 @@ var form = document.getElementById('formulario');
     }
 
     if(generom.value === null || generom.value === ''){
-        mensajesError.push('genero')
+        mensajesError.push('generom')
     }
 
     if(generof.value === null || generof.value === ''){
