@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
-<style>
-    label{
-        display: block;
-        float: left;
-        width: 70px;
-    }
-</style>
+
 </head>
 <body>
 
     <form action="" id = 'formulario'>
         <div>
             <label for="rut">Rut</label>
-            <input type="text" id='rut'>
+            <input type="number" minlength='9' maxlength='10' id='rut'>
         </div> 
         <div>
             <label for="apellidopa">Apellido paterno</label>
@@ -33,15 +27,17 @@
         </div>
         <div>
             <label for="fechaNac">Fecha nacimiento</label>
-            <input type="text" id='fechaNac'>
+            <input type="date" id='fechaNac'>
         </div>
         <div>
             <label for="edad">Edad</label>
             <input type="number" id='edad'>
         </div>
         <div>
-            <label for="genero">Genero</label>
-            <input type="checkbox" id='genero'>
+            <label for="genero">Masculino</label>
+            <input type="checkbox" id='generom'>
+            <label for="genero">Femenino</label>
+            <input type="checkbox" id='generof'>
         </div>
         <div>
             <label for="email">Email</label>
@@ -52,7 +48,7 @@
             <input type="text" id='celular'>
         </div>
         <div>
-            <label for="motivacion">Motivacion para postular al trabajo</label>
+            <label for="motivacion">Motivacion postular</label>
             <input type="text" id='motivacion'>
         </div>
         <div>
@@ -66,7 +62,7 @@
 <div id ='error'></div>
 
 <script src='app.js'> </script>
-
+<script src="style.css"></script>
     
 </body>
 </html>

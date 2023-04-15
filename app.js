@@ -4,7 +4,8 @@ var apellidoMa = document.getElementById('apellidoMa');
 var nombre = document.getElementById('nombre');
 var fechaNac = document.getElementById('fechaNac');
 var edad = document.getElementById('edad');
-var genero = document.getElementById('genero');
+var generom = document.getElementById('generom');
+var generof = document.getElementById('generof');
 var email = document.getElementById('email');
 var celular = document.getElementById('celular');
 var motivacion = document.getElementById('motivacion');
@@ -46,8 +47,12 @@ var form = document.getElementById('formulario');
         mensajesError.push('Ingresa tu edad')
     }
 
-    if(genero.value === null || genero.value === ''){
+    if(generom.value === null || generom.value === ''){
         mensajesError.push('genero')
+    }
+
+    if(generof.value === null || generof.value === ''){
+        mensajesError.push('generof')
     }
 
     if(email.value === null || email.value === ''){
@@ -55,11 +60,11 @@ var form = document.getElementById('formulario');
     }
 
     if(celular.value === null || celular.value === ''){
-        mensajesError.push('Ingresa tu nombre')
+        mensajesError.push('Ingresa tu celular')
     }
 
     if(motivacion.value === null || motivacion.value === ''){
-        mensajesError.push('Ingresa tu nombre')
+        mensajesError.push('Ingrese su motivacion')
     }
 
     if(profesion.value === null || profesion.value === ''){
