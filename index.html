@@ -10,50 +10,51 @@
 
     <form action="" id = 'formulario'>
         <div>
-            <label for="rut">Rut</label>
-            <input type="number" min='100000000' max='9999999999' id='rut'>
+            <label for="rut"></label>
+            <input type="text" placeholder="Rut" maxlength="10" id='rut'>
         </div> 
         <div>
-            <label for="apellidopa">Apellido paterno</label>
-            <input type="text" id='apellidopa'>
+            <label for="apellidopa"></label>
+            <input type="text" placeholder="Apellido paterno" maxlength="20" id='apellidopa'>
         </div> 
         <div>
-            <label for="apellidoma">Apellido Materno</label>
-            <input type="text" id='apellidoma'> 
+            <label for="apellidoma"></label>
+            <input type="text" placeholder="Apellido Materno" maxlength="20" id='apellidoma'> 
         </div>
         <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" min="3" max="20" id='nombre'>
+            <label for="nombre"></label>
+            <input type="text" placeholder="Nombre" maxlength="20" id='nombre'>
         </div>
         <div>
-            <label for="fechaNac">Fecha nacimiento</label>
-            <input type="date" id='fechaNac'>
+            <label for="fechaNac"></label>
+            <input type="date" placeholder="Fecha nacimiento" id='fechaNac'>
         </div>
         <div>
-            <label for="edad">Edad</label>
-            <input type="number" min="18" max="60" id='edad'>
+            <label for="edad"></label>
+            <input type="number" placeholder="Edad" min="18" max="35" id='edad'>
         </div>
         <div>
-            <label for="genero">Masculino</label>
-            <input type="checkbox" id="generom">
-            <label for="genero">Femenino</label>
-            <input type="checkbox" id="generof">
+            <label for="favoriteOnly">Selecciona tu genero:</label>
+            <select name="genero" id="genero">
+            <option>Masculino</option>
+            <option>Femenino</option> 
+            </select>       
         </div>
         <div>
-            <label for="email">Email</label>
-            <input type="text" id='email'>
+            <label for="email"></label>
+            <input type="text" placeholder="Email" id='email'>
         </div>
         <div>
-            <label for="celular">Celular</label>
-            <input type="number" minlength='9' maxlength='10' id='celular'>
+            <label for="celular"></label>
+            <input type="text" placeholder="Celular" maxlength='12' id='celular'>
         </div>
         <div>
             <label for="motivacion"></label>
-            <textarea name="textarea" id='motivacion' rows="10" cols="50">Motivacion postulalacion</textarea>
+            <textarea name="textarea" id='motivacion' rows="10" cols="50" placeholder="Motivacion Postulacio"></textarea>
         </div>  
         <div>
-            <label for="profesion">Profesion</label>
-            <input type="text" id='profesion'>
+            <label for="profesion"></label>
+            <input type="text" placeholder="Profesion" id='profesion'>
         </div>
 
         <input type="submit" value='enviar'>
